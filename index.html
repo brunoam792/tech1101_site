@@ -1,48 +1,74 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Selectors Learning Activity 2.2.1</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bruno Alves Martins</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>CSS Selectors Learning Activity</h1>
-  <p>I am not inside a div.</p>
-  <div>
-    <p class="hello">I am a paragraph with a class</p>
-    <p id="special">I am a paragraph with an ID</p>
-    <h2>I am an awesome h2</h2>
-    <p>Roof party yr hella synth, Wes Anderson narwhal four dollar toast before they sold out retro lo-fi. Austin iPhone pop-up farm-to-table, PBR&B McSweeney's ennui messenger bag distillery before they sold out Portland wolf fanny pack YOLO.
-      Locavore slow-carb trust fund farm-to-table. Pinterest gastropub lo-fi, McSweeney's trust fund VHS shabby chic ugh Austin twee. Messenger bag banjo lumbersexual, whatever 3 wolf moon XOXO normcore. Pug fanny pack 3 wolf moon, typewriter organic
-      chia mustache scenester seitan shabby chic Blue Bottle salvia ugh iPhone. Fanny pack Williamsburg direct trade, cold-pressed disrupt flannel listicle health goth asymmetrical freegan mixtape street art pour-over whatever.</p>
-  </div>
-  <div>
-    <h2>Things I need to do</h2>
-    <ul>
-      <li>Walk Dog <input type="checkbox" checked> </li>
-      <li>Feed Dog <input type="checkbox" checked> </li>
-      <li>Wash Dog <input type="checkbox"></li>
-    </ul>
-  </div>
-  <div>
-    <h2>I am another awesome h2</h2>
-    <p>Cardigan Tumblr mlkshk, fap tilde 3 wolf moon Portland. Heirloom health goth taxidermy blog lo-fi selfies, post-ironic master cleanse fingerstache normcore. Kickstarter plaid twee, bespoke single-origin coffee sustainable lo-fi vinyl Pinterest
-      pork belly <em>cronut skateboard</em> 3 wolf moon. Normcore single-origin coffee salvia, bespoke Austin swag Godard before they sold out kogi disrupt locavore. Lumbersexual Shoreditch Vice, artisan American Apparel master cleanse yr salvia
-      vegan. Bespoke letterpress heirloom kale chips deep v four loko. Lomo sustainable put a bird on it trust fund post-ironic</p>
-    <p>I'm the second paragraph inside this div!</p>
-  </div>
-  <p>I am again not inside a div.</p>
-  <div>
-    <h2>A less awesome h2</h2>
-    <p>Roof party yr hella synth, Wes Anderson narwhal four dollar toast before they sold out retro lo-fi. Austin iPhone pop-up farm-to-table, PBR&B McSweeney's ennui messenger bag distillery before they sold out Portland wolf fanny pack YOLO.
-      Locavore slow-carb trust fund farm-to-table. Pinterest gastropub lo-fi, McSweeney's trust fund VHS shabby chic ugh Austin twee. Messenger bag banjo lumbersexual, whatever 3 wolf moon XOXO normcore. Pug fanny pack 3 wolf moon, typewriter organic
-      chia mustache scenester seitan shabby chic Blue Bottle salvia ugh iPhone. Fanny pack Williamsburg direct trade, cold-pressed disrupt flannel listicle health goth asymmetrical freegan mixtape street art pour-over whatever</p>
-    <p>One last paragraph here!</p>
-    <a href="https://www.facebook.com">I am a link to facebook</a>
-    <a href="https://www.google.com">I am another link to google</a>
-    <br>
-    <input type="text" name="name" /><label> Name</label><br />
-    <input type="password" name="password" /><label> Password</label><br />
-  </div>
-  <p>I am again not inside a div for the last time</p>
+    <div class="page">
+        <nav>
+            <ul>
+                <li><a href="index.html">Resume</a></li>
+                <li><a href="html_cheatsheet.html">HTML Cheat Sheet</a></li>
+                <li><a href="css_cheatsheet.html">CSS Cheat Sheet</a></li>
+                <li><a href="js_cheatsheet.html">JS Cheat Sheet</a></li>
+            </ul>
+        </nav>
+        <header>
+            <div class="header-info">
+                <h1>Bruno Martins</h1>
+            </div>
+        </header>
+        <div class="container">
+            <div class="left-column">
+                <section id="summary">
+                    <h2>Summary <img src="img/summary.png" alt="Summary Icon"></h2>
+                    <!--<a target="_blank" href="https://icons8.com/icon/11768/overview">Summary</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>-->
+                    <p>Enthusiastic IT professional with expertise in  technical support, diagnosing, and troubleshooting diverse system issues. I prioritize customer satisfaction, proactively preventing technical challenges. I manage network infrastructure, ensure data integrity with backup systems, and implement robust security measures. With clear communication skills, I build positive client relationships. I'm adaptable, committed to learning, ensuring innovative tech solutions in a dynamic landscape</p>
+                </section>
+                <section id="education">
+                    <!--<a target="_blank" href="https://icons8.com/icon/tP3OXTLBOXKl/education">Education</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>-->
+                    <h2>Education <img src="img/education.png" alt="Education Icon"></h2>
+                    <h3>Bow Valley College</h3>
+                    <p>Diploma of Education, Information Technology<br>Sep 2023 - Nov 2025<br>Grade: Software Development</p>               
+                    <br>
+                    <h3>Univesp Oficial</h3>
+                    <p>Bachelor's degree, Information Technology<br>Feb 2020 - Dec 2022</p>                </section>
+            </div>
+            <div class="right-column">
+                <section id="skills">
+                    <!--<a target="_blank" href="https://icons8.com/icon/53421/learning">Skills</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>-->
+                    <h2>Skills <img src="img/skills.png" alt="Skills Icon"></h2>
+                    <ul>
+                        <li>Operating Systems Knowledge</li>
+                        <li>Technical Troubleshooting</li>
+                        <li>Hardware and Software Support</li>
+                        <li>Customer Service</li>
+                        <li>Data Backup and Recovery</li>
+                        <li>Network Management</li>
+                        <li>Information Security</li>
+                        <li>Ticket and Management</li>
+                    </ul>
+                </section>
+                <section id="experience">
+                    <!--<a target="_blank" href="https://icons8.com/icon/20397/permanent-job">Job</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>-->
+                    <h2>Work Experience <img src="img/experience.png" alt="Experience Icon"></h2>
+                    <h3>Neo Financial</h3>
+                    <h4>Customer Experience Specialist</h4>
+                    <p>Nov 2023 - Present · 2 mos<br>Calgary, Alberta, Canada · On-site</p>
+                    <br>
+                    <h3>Santos City Hall</h3>
+                    <h4>IT Support Specialist</h4>
+                    <p>Jul 2012 - Aug 2023 · 11 yrs 2 mos</p>
+                    <br>
+                    <h3>ETEC - Escola Técnica Estadual de São Paulo</h3>
+                    <h4>Technical Internship</h4>
+                    <p>Jan 2010 - Jun 2012 · 2 yrs 6 mos<br>Santos, São Paulo, Brazil</p>
+                </section>
+            </div>
+        </div>
+    </div>                              
 </body>
 </html>
