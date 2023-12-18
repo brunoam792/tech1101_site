@@ -1,0 +1,167 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: black;
+    background-image: url('img/header.jpg'); /* Path to the header image */
+    background-size: cover; /* Cover the entire header */
+    background-position: center; /* Center the image within the header */
+    background-repeat: repeat; /* Prevent repeating the image */
+
+}
+
+
+.page {
+    width: 21cm;
+    margin: 1cm auto;
+    background-color: white;
+    padding: 1cm;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Align list items to the center */
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+
+/* Header Styles */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-image: url('img/header.jpg'); /* Path to the header image */
+    background-size: cover; /* Cover the entire header */
+    background-position: center; /* Center the image within the header */
+    background-repeat: no-repeat; /* Prevent repeating the image */
+    height: 140px;
+}
+
+/* Adjusting text colors in the header */
+header h1 {
+    color: white; /* Change h1 text color to white */
+}
+
+header h2 {
+    color: white; /* Change h1 text color to white */
+}
+
+/* Additional CSS to style the icons */
+h2 {
+    display: flex;
+    align-items: center;
+}
+
+h2 img {
+    width: 1em; /* Adjust as needed */
+    height: 1em; /* Adjust as needed */
+    margin-left: 0.5em; /* Adjust spacing between h2 text and icon */
+    vertical-align: middle; /* Align icon vertically with text */
+    max-width: 100%; /* Prevent icon from overflowing */
+    max-height: 100%; /* Prevent icon from overflowing */
+}
+
+header p {
+    color: white; /* Change the text color */
+}
+
+/* Styles for the header information */
+.header-info {
+    flex-grow: 1;
+}
+
+/* Styles for the container */
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Styles for the left column */
+.left-column {
+    width: 48%;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for the right column */
+.right-column {
+    width: 48%;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Add space between sections in left column */
+.left-column section {
+    margin-bottom: 20px; /* Adjust margin as needed */
+}
+
+/* Add space between sections in right column */
+.right-column section {
+    margin-bottom: 20px; /* Adjust margin as needed */
+}
+
+.left-column div,
+.right-column div {
+    margin-bottom: 20px; /* Ajuste o espaçamento entre as divs */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    break-inside: avoid; /* Evita que um conteúdo se quebre entre as colunas */
+}
+
+.tooltip {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: none;
+    z-index: 1;
+    pointer-events: none;
+    width: 100%; /* Preenche a largura da div */
+    height: 100%; /* Preenche a altura da div */
+    top: 0; /* Alinha ao topo da div */
+    left: 0; /* Alinha à esquerda da div */
+    text-align: center; /* Centraliza o texto horizontalmente */
+    box-sizing: border-box; /* Mantém o padding dentro da largura e altura */
+}
+
+.web_content {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    position: relative; /* Estabelece um contexto de posicionamento para o .tooltip */
+    /* Restante do seu estilo */
+}
+
+.web_content:hover .tooltip {
+    display: block;
+}
